@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+
+* {
+	font-family: 'Patua One', cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+canvas {
+	background-color: transparent;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+html {
+	overflow: auto;
+	background-color: rgba(0, 48, 48, 1.0);
+	background-image: radial-gradient(circle, rgba(0, 96, 96, 1.0), rgba(0, 0, 0, 0.5));
+	width: 100%;
+	height: 100%;
+}
+html, body {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	margin-top: 25%;
+	font-size: 300%;
+	color: white;
+	text-shadow: 0px 0px 8px white;
+	justify-content: center;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-animation: text1anim 1s linear infinite, rainbowAnim 2s linear infinite;
+	        animation: text1anim 1s linear infinite, rainbowAnim 2s linear infinite;
+	z-index: 10;
+}
+
+h1 {
+	color: white;
+	font-size: 400%;
+	text-shadow: 0px 0px 8px white;
+	justify-content: center;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-animation: text2anim 1s linear infinite, rainbowAnim 2s linear infinite;
+	        animation: text2anim 1s linear infinite, rainbowAnim 2s linear infinite;
+	z-index: 10;
+}
+
+
+
+@-webkit-keyframes text1anim {
+	0%   {font-size: 350%;}
+	50%   {font-size: 200%;}
+	100%   {font-size: 350%;}
+}
+
+
+
+@keyframes text1anim {
+	0%   {font-size: 350%;}
+	50%   {font-size: 200%;}
+	100%   {font-size: 350%;}
+}
+
+@-webkit-keyframes text2anim {
+	0%   {font-size: 250%;}
+	50%   {font-size: 400%;}
+	100%   {font-size: 250%;}
+}
+
+@keyframes text2anim {
+	0%   {font-size: 250%;}
+	50%   {font-size: 400%;}
+	100%   {font-size: 250%;}
+}
+
+@-webkit-keyframes rainbowAnim {
+    0%   {border-color: rgba(200, 0, 0, 1); color: rgba(250, 0, 0, 1); 
+		text-shadow: -1px -1px 6px rgba(200, 0, 0, 1), 1px 1px 12px #000000;}
+    33%  {border-color: rgba(0, 200, 0, 1); color: rgba(0, 250, 0, 1); 
+		text-shadow: -1px -1px 6px rgba(0, 200, 0, 1), 1px 1px 12px #000000;}
+    66%  {border-color: rgba(0, 0, 200, 1); color: rgba(0, 0, 250, 1); 
+		text-shadow: -1px -1px 6px rgba(0, 0, 200, 1), 1px 1px 12px #000000;}
+    100% {border-color: rgba(200, 0, 0, 1); color: rgba(250, 0, 0, 1); 
+		text-shadow: -1px -1px 6px rgba(200, 0, 0, 1), 1px 1px 12px #000000;}
+}
+
+@keyframes rainbowAnim {
+    0%   {border-color: rgba(200, 0, 0, 1); color: rgba(250, 0, 0, 1); 
+		text-shadow: -1px -1px 6px rgba(200, 0, 0, 1), 1px 1px 12px #000000;}
+    33%  {border-color: rgba(0, 200, 0, 1); color: rgba(0, 250, 0, 1); 
+		text-shadow: -1px -1px 6px rgba(0, 200, 0, 1), 1px 1px 12px #000000;}
+    66%  {border-color: rgba(0, 0, 200, 1); color: rgba(0, 0, 250, 1); 
+		text-shadow: -1px -1px 6px rgba(0, 0, 200, 1), 1px 1px 12px #000000;}
+    100% {border-color: rgba(200, 0, 0, 1); color: rgba(250, 0, 0, 1); 
+		text-shadow: -1px -1px 6px rgba(200, 0, 0, 1), 1px 1px 12px #000000;}
+}
